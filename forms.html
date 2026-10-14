@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+</head>
+<body>
+
+    <h1>forms</h1>
+    <form method="post">
+        <fieldset>
+            <legend>Full name</legend>
+        <label for="firstname">First name :</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Your name">
+
+        <br><br>
+
+        <label for="lastname">Last name :</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last namne">
+
+        <br><br>
+        </fieldset>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required>
+
+        <br><br>
+
+        <label for="pass">Password :</label>
+        <input type="password" name="pass" id="pass" required>
+        <br><br>
+
+        <label for="bd">Birth date :</label>
+        <input type="date" name="bd" id="bd">
+        <br><br>
+
+        <label for="pc">Postal code</label>
+        <input type="text" name="pc" id="pc" pattern="[0-9]{5}">
+        <br><br>
+
+        <label for="sb">🔎</label>
+        <input type="search" name="sb" id="sb" placeholder="Search..">
+        <br><br>
+
+        <label for="rs">Random range</label>
+        <input type="range" id="rs" name="rs" min="0" max="100">
+        <br><br>
+
+        <p>Sexe : </p>
+        <input type="radio" name="sexe" id="sexe">
+        <label for="sexe"> Male</label>
+        <input type="radio" name="sexe" id="sexe">
+        <label for="sexe"> Female</label>
+        <br><br>
+        
+        <p>Interests:</p>
+        <input type="checkbox" name="dm" id="dm">
+        <label for="dm"> Psychology</label>
+        <input type="checkbox" name="dm" id="dm">
+        <label for="dm"> Philosophy</label>
+        <input type="checkbox" name="dm" id="dm">
+        <label for="dm"> Biology</label>
+        <br><br>
+        
+        <label for="cntry">Country</label>
+        <select name="cntry" id="cntry">
+            <option value="">-Choose a country</option>
+            <option value="United kingdom">United kingdom</option>
+            <option value="Norway">Norway</option>
+            <option value="Morocco">Morocco</option>
+        </select>
+        <br><br>
+        <label for="area" ari>Reason for applying :</label>
+        <textarea name="area" id="area" placeholder="Type reason here..." rows="6" cols="30"></textarea>
+        <br><br>
+
+    <button type="submit">Send</button>    
+    </form>
+
+</body>
+</html>
